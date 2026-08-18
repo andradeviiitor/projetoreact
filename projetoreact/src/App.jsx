@@ -1,16 +1,19 @@
 import { Routes, Route } from "react-router";
 
-import Home from "./pages/Home";
+import Menucima from "./pages/Menucima";
 import Produto from "./pages/Produto";
-import Sobre from "./pages/Sobre";
+import Fazerpedido from "./pages/Fazerpedido";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/produtos" element={<Produto />} />
-      <Route path="/sobre" element={<Sobre />} />
-    </Routes>
+    <>
+      <Menucima />
+      <Routes>
+        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/produto" element={<Produto />} />
+        <Route path="/fazerpedido" element={<Fazerpedido />} />
+      </Routes>
+    </>
   );
 }
 
