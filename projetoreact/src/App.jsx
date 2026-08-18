@@ -9,7 +9,7 @@ function App() {
     <>
       <Menucima />
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/" element={<Produto />} />
         <Route path="/produto" element={<Produto />} />
         <Route path="/fazerpedido" element={<Fazerpedido />} />
       </Routes>
